@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111d1b" />
+    <meta
+      name="description"
+      content="SysConex: soporte técnico, cámaras de seguridad, redes, desarrollo web y soluciones tecnológicas para empresas."
+    />
+    <title>SysConex | Soluciones Tecnológicas </title>
+    <!-- ESTILOS: aquí se controla la apariencia general y la adaptación a celulares. -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- CABECERA: cambia aquí el nombre comercial y el texto bajo el logotipo. -->
+    <header class="header" id="inicio">
+      <a class="brand" href="#inicio" aria-label="SysConex, inicio">
+
+        <!-- MARCA V6: icono extraído del kit de identidad SysConex. -->
+        <img class="brand-icon" src="assets/sysconex-icon.png" alt="" />
+        <span class="brand-words">
+          <strong>Sys<span>Conex</span></strong>
+          <small>SOLUCIONES TECNOLÓGICAS </small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a
+        ><a href="#proceso">Cómo trabajamos</a><a href="#contacto">Contacto</a>
+      </nav>
+      <button
+        id="openCart"
+        class="cart-button"
+        type="button"
+        aria-label="Abrir solicitud de cotización"
+      >
+        Mi solicitud <span id="cartCount">0</span>
+      </button>
+    </header>
+    <main>
+      <!-- PORTADA: cambia los títulos y botones según tu negocio. -->
+      <!-- PORTADA FINAL: video silencioso de fondo, textos y botones originales. -->
+      <section class="hero section-wrap" aria-labelledby="heroTitle">
+        <!-- V10: horizonte de planeta conectado; animación CSS sin video ni dependencias. -->
+        <div class="hero-copy">
+          <p class="eyebrow">TECNOLOGÍA QUE IMPULSA TU NEGOCIO</p>
+          <h1 id="heroTitle">
+            <span class="hero-title-main">Tu empresa <span class="hero-glow">conectada.</span></span>
+            <em>Tu tecnología, <span class="hero-highlight">resuelta.</span></em>
+          </h1>
+          <p>
+            Soporte, cámaras de seguridad, redes y soluciones web con atención
+            personalizada para tu empresa o emprendimiento.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#servicios">Ver servicios</a
+            ><a class="button ghost" href="#contacto"
+              >Hablemos de tu proyecto</a
+            >
+          </div>
+
+        </div>
+        <!-- VIDEO DE PORTADA: fondo visual, sin sonido, repetición automática. -->
+        <video
+          class="hero-background-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-hidden="true"
+          tabindex="-1"
+        >
+          <source src="assets/Portada.mp4" type="video/mp4" />
+        </video>
+        <!-- Capa oscura para mantener legibles los títulos sobre el video. -->
+        <div class="hero-video-shade" aria-hidden="true"></div>
+      </section>
+      <!-- SERVICIOS: el contenido de estas tarjetas se carga desde Supabase o desde los datos de ejemplo. -->
+      <section
+        class="section-wrap services"
+        id="servicios"
+        aria-labelledby="servicesTitle"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">QUÉ HACEMOS</p>
+            <h2 id="servicesTitle">Soluciones para cada necesidad</h2>
+          </div>
+        </div>
+
+        <!-- FILTROS RETIRADOS DE LA VISTA: se mantienen ocultos para compatibilidad con app.js.
+             El usuario entra directamente en las cuatro tarjetas y elige subservicios. -->
+        <div class="filters" hidden aria-hidden="true">
+          <label class="search"
+            ><span class="sr-only">Buscar servicio</span
+            ><input
+              id="searchInput"
+              type="search"
+              placeholder="Buscar servicio o subservicio (ej.: instalación de programas)..."
+              autocomplete="off"
+          /></label>
+          <div
+            id="categoryFilters"
+            class="category-filters"
+            aria-label="Filtrar servicios"
+          ></div>
+        </div>
+        <div id="servicesGrid" class="services-grid" aria-live="polite"></div>
+        <p id="catalogStatus" class="catalog-status" role="status"></p>
+      </section>
+
+      <!-- NOSOTROS: texto institucional editable. Evita prometer certificaciones que no posees. -->
+      <!-- FONDO NOSOTROS: reemplaza assets/Soporte.jpg en CSS (.about) o usa un video opcional. -->
+       
+      <section class="about section-wrap media-section" id="nosotros">
+        <div>
+          <p class="eyebrow">SOBRE SysConex</p>
+          <h2>Un aliado tecnológico para tu empresa</h2>
+        </div>
+        <p>
+          Te ayudamos a resolver problemas técnicos, mejorar la conectividad,
+          proteger tus instalaciones y construir una presencia digital
+          profesional. Cada solución se evalúa según tus necesidades reales.
+        </p>
+      </section>
+
+      <!-- PROCESO: explica cómo se convierte una consulta en servicio. -->
+      <!-- PROCESO SIN FONDO GENERAL: cada tarjeta tiene su propia fotografía. -->
+
+      <section class="section-wrap process media-section" id="proceso">
+        <p class="eyebrow">SIMPLE Y DIRECTO</p>
+        <h2>¿Cómo trabajamos?</h2>
+        <div class="steps">
+          <article>
+            <!-- IMAGEN PASO 01: cambia la ruta src por tu fotografía preferida. -->
+            <div class="step-photo"><img src="assets/Soporte.jpg" alt="Atención y diagnóstico técnico" loading="lazy"></div>
+            <span class="step-number">01</span>
+            <h3>Cuéntanos</h3>
+            <p>Elige servicios o describe tu necesidad.</p>
+          </article>
+          <article>
+            <!-- IMAGEN PASO 02: cambia la ruta src por tu fotografía preferida. -->
+            <div class="step-photo"><img src="assets/Redes.jpg" alt="Evaluación de infraestructura y redes" loading="lazy"></div>
+            <span class="step-number">02</span>
+            <h3>Evaluamos</h3>
+            <p>Coordinamos los detalles técnicos y el alcance.</p>
+          </article>
+          <article>
+            <!-- IMAGEN PASO 03: cambia la ruta src por tu fotografía preferida. -->
+            <div class="step-photo"><img src="assets/Camaras.jpg" alt="Cotización de soluciones tecnológicas" loading="lazy"></div>
+            <span class="step-number">03</span>
+            <h3>Cotizamos</h3>
+            <p>Recibes una propuesta según el trabajo requerido.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACTO: el botón abre WhatsApp con una consulta general. -->
+      <!-- FONDO CONTACTO: capa difuminada sobre la fotografía, editable en CSS (.contact). -->
+
+      <section class="contact section-wrap media-section" id="contacto">
+        <div>
+          <p class="eyebrow">¿EMPEZAMOS?</p>
+          <h2>Conversemos sobre tu proyecto.</h2>
+          <p>
+            Solicita información, una visita técnica o una cotización sin
+            compromiso.
+          </p>
+        </div>
+        <a
+          id="generalWhatsapp"
+          class="button light"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Contactanos ↗</a
+        >
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA: sin imagen repetida; modifica aquí enlaces y marca. -->
+    <footer class="footer">
+      <div class="section-wrap footer-inner">
+        <div>
+          <strong>SysConex</strong>
+          <p>Soluciones tecnológicas para empresas.</p>
+        </div>
+        <div>
+          <h3>Explora</h3>
+          <a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a
+          ><a href="#proceso">Cómo trabajamos</a>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <a
+            id="footerWhatsapp"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >WhatsApp: 947 674 095</a
+          >
+          <p>Atención previa coordinación</p>
+        </div>
+      </div>
+      <div class="section-wrap copyright">
+        © <span id="year"></span> SysConex. Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <!-- PANEL DE SUBSERVICIOS: se abre al pulsar la fotografía, el título o la tarjeta. -->
+    <div id="detailOverlay" class="overlay" hidden></div>
+    <aside id="detailPanel" class="detail-panel" role="dialog" aria-modal="true" aria-label="Elegir subservicios" aria-hidden="true">
+      <div class="cart-header">
+        <div><p class="eyebrow">PERSONALIZA TU SOLICITUD</p><h2 id="detailTitle">Selecciona las tareas</h2></div>
+        <button id="closeDetail" class="icon-button" type="button" aria-label="Cerrar subservicios">✕</button>
+      </div>
+      <p id="detailDescription" class="detail-description"></p>
+      <div id="detailItems" class="detail-items"></div>
+      <button id="detailConfirm" class="button primary full" type="button">Ver mi solicitud ↗</button>
+    </aside>
+
+    <!-- PANEL DE COTIZACIÓN: funciona como carrito de servicios, sin cobro en línea. -->
+
+    <div id="overlay" class="overlay" hidden></div>
+    <aside
+      id="cartPanel"
+      class="cart-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Solicitud de cotización"
+      aria-hidden="true"
+    >
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">TU SELECCIÓN</p>
+          <h2>Solicitar cotización</h2>
+        </div>
+        <button id="clearCart" class="clear-cart-button" type="button" aria-label="Limpiar todos los servicios seleccionados">Limpiar todo</button>
+        <button
+          id="closeCart"
+          class="icon-button"
+          aria-label="Cerrar solicitud"
+        >
+          ✕
+        </button>
+      </div>
+      <!-- LISTA DESPLAZABLE: el pie del panel permanece visible. -->
+      <div id="cartItems" class="cart-items" role="region" aria-label="Servicios seleccionados" tabindex="0"></div>
+      <div class="cart-actions">
+      <p class="cart-note">
+        Los servicios se cotizan según el alcance. No se realiza ningún pago
+        desde esta web.
+      </p>
+      <button id="sendQuote" class="button primary full" type="button">
+        Enviar solicitud ↗
+      </button>
+      </div>
+    </aside>
+    <!-- JAVASCRIPT: config.js va antes de app.js porque contiene WhatsApp y Supabase. -->
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
